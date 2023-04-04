@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 const JobsBanner = () => (
     <section
-        className="h-[calc(100vh-var(--header-size))] bg-no-repeat bg-center bg-cover bg-[url('src/assets/img/jobs.a26fc641.webp')] bg-[rgba(10,109,214,.714)] bg-blend-multiply"
+        className="h-[calc(100vh-var(--header-size))] bg-no-repeat bg-center bg-cover bg-[url('/src/assets/img/jobs.a26fc641.webp')] bg-[rgba(10,109,214,.714)] bg-blend-multiply"
     >
         <div className="page-container h-full">
             <div className="grid md:grid-cols-2 items-center section-container text-white h-full">

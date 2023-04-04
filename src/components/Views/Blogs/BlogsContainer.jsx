@@ -9,49 +9,49 @@ const BlogsContainer = () => {
             category: 'Salud',
             specialist: 'Hugo F. Moreno - Especialista en Cirugía de Torax y Neumonología - MP 22993',
             readingTimeMins: 11,
-            imageBgClassName: 'bg-[url("src/assets/img/medium_hands-with-lungs-shape.jpg")]'
+            imageBgClassName: 'bg-[url("/src/assets/img/medium_hands-with-lungs-shape.jpg")]'
         },
         {
             title: '¿Qué debemos saber de la Diabetes?',
             category: 'Salud',
             specialist: 'ÜMA Salud',
             readingTimeMins: 10,
-            imageBgClassName: 'bg-[url("src/assets/img/small_blood-glucose-meter-and-stethoscope-on-white-background.jpg")]'
+            imageBgClassName: 'bg-[url("/src/assets/img/small_blood-glucose-meter-and-stethoscope-on-white-background.jpg")]'
         },
         {
             title: '¿Qué es la Viruela del Mono y cuáles son sus síntomas?',
             category: 'Salud',
             specialist: 'Sofia Lodos - Médica - MN 155560',
             readingTimeMins: 6,
-            imageBgClassName: 'bg-[url("src/assets/img/small_6286a52cb1646.jpg")]'
+            imageBgClassName: 'bg-[url("/src/assets/img/small_6286a52cb1646.jpg")]'
         },
         {
             title: 'Vacunación antigripal y algunos conceptos a saber sobre la gripe',
             category: 'Salud',
             specialist: 'Lucas Matías Córdoba - Médico',
             readingTimeMins: 9,
-            imageBgClassName: 'bg-[url("src/assets/img/small_woman-with-plaster-on-shoulder-sitting-in-chair-after-vaccination.jpg")]'
+            imageBgClassName: 'bg-[url("/src/assets/img/small_woman-with-plaster-on-shoulder-sitting-in-chair-after-vaccination.jpg")]'
         },
         {
             title: 'Las 11 preguntas más frecuentes sobre hipertensión arterial',
             category: 'Cardiología',
             specialist: 'Gustavo Daquarti - Cardiólogo',
             readingTimeMins: 14,
-            imageBgClassName: 'bg-[url("src/assets/img/small_close-up-blood-pressure-measuring-device.jpg")]'
+            imageBgClassName: 'bg-[url("/src/assets/img/small_close-up-blood-pressure-measuring-device.jpg")]'
         },
         {
             title: 'Progressive Web Apps: ¿La web es el futuro de las aplicaciones?',
             category: 'Tecnología',
             specialist: 'Farid Murzone - AI & Engineering Mgr. / CoFounder ÜMA',
             readingTimeMins: 14,
-            imageBgClassName: 'bg-[url("src/assets/img/img-blog-pwa-jul-21-mitrais.webp")]'
+            imageBgClassName: 'bg-[url("/src/assets/img/img-blog-pwa-jul-21-mitrais.webp")]'
         },
         {
             title: 'Nuestro sistema inmune luego del Covid-19',
             category: 'Nutrición',
             specialist: 'Lorena Agostini - Nutricionista - MN 4133',
             readingTimeMins: 6,
-            imageBgClassName: 'bg-[url("src/assets/img/small_healthy-balanced-vegetarian-food-top-view.jpg")]'
+            imageBgClassName: 'bg-[url("/src/assets/img/small_healthy-balanced-vegetarian-food-top-view.jpg")]'
         }
     ]
     const [ filterBlogs, setFilterBlogs ] = useState('Todos')
