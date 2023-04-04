@@ -1,0 +1,491 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .page-container{
+        @apply w-[90%] sm:w-full mx-auto container;
+    }
+
+    .btn{
+        @apply py-2 px-6 rounded-md text-center block;
+    }
+
+    .btn.blog{
+        @apply rounded-sm py-1 px-4 font-semibold text-sm;
+    }
+
+    .btn.transparent{
+        @apply border-uma-blue border text-uma-blue;
+    }
+
+    .btn.dark{
+        @apply bg-uma-blue text-white;
+    }
+
+    .btn.dark-white{
+        @apply bg-white text-uma-blue font-semibold;
+    }
+
+    .section-container{
+        @apply md:w-[90%] mx-auto;
+    }
+
+    .submenu{
+        @apply 
+            absolute 
+            top-full
+            right-0 
+            bg-white
+            w-80 
+            shadow-md 
+            py-4 
+            flex 
+            flex-col 
+            gap-5 
+            opacity-0 
+            pointer-events-none
+            transition-opacity;
+    }
+
+    .underline-link{
+        @apply 
+            relative 
+            after:block 
+            after:content-['']
+            after:absolute 
+            after:w-0 
+            after:h-[1.5px] 
+            after:bg-uma-blue
+            after:ease-in-out
+            after:opacity-0
+            after:transition-[opacity,width]
+            after:duration-500;
+    }
+
+    .custom-modal{
+        @apply 
+            fixed 
+            top-[var(--header-size)] 
+            left-0 
+            z-50 
+            bg-black/70
+            w-full
+            h-[calc(100vh-var(--header-size))]
+            opacity-0 
+            pointer-events-none;
+    }
+
+    .custom-modal.nav{
+        @apply top-[var(--header-size)];
+    }
+
+    .section{
+        @apply py-12 md:py-16;
+    }
+
+    .section-title{
+        @apply 
+            text-uma-blue-dark
+            text-center
+            text-3xl
+            font-bold
+            mb-12;
+    }
+
+    .list-item-image{
+        @apply 
+            flex
+            items-center
+            justify-center
+            gap-3
+            before:content-[''] 
+            before:block 
+            before:w-4
+            before:h-4
+            before:bg-contain
+            before:bg-no-repeat
+            before:bg-center
+            before:shrink-0;
+    }
+        
+    .list-item-image.check{
+        @apply before:bg-[url('src/assets/img/check.png')];
+    }
+
+    .list-item-image.plan{
+        @apply 
+            before:bg-[url('src/assets/img/featureItem.2437cbf4.webp')] 
+            justify-start
+            before:w-8
+            before:h-8;
+    }
+
+    .list-item-image.plan.alt{
+        @apply 
+            [counter-increment:list-counter]
+            before:content-[counter(list-counter)]
+            before:text-sm
+            before:flex 
+            before:items-start 
+            before:justify-center;
+    }
+
+    .list-item-image.company-service{
+        @apply 
+            justify-start
+            before:rounded-full
+            before:w-3
+            before:h-3
+            before:bg-uma-blue;
+    }
+
+    .list-item-image.question-answers{
+        @apply
+            before:w-8
+            before:h-8
+            justify-start
+            items-start
+            gap-5;
+    }
+
+    .list-item-image.beneficts{
+        @apply justify-start;
+    }
+
+    .slider-btn-custom{
+        @apply 
+            w-3
+            h-3
+            rounded-full
+            bg-white/75
+            absolute
+            top-1/2
+            -translate-y-1/2;
+    }
+
+    .slider-btn-custom.next{
+        @apply left-[101%];
+    }
+
+    .slider-btn-custom.back{
+        @apply right-[101%];
+    }
+
+    .slide-btn-custom{
+        @apply w-[6px] h-[6px] rounded-full bg-gray-400/50 hover:bg-black/70;
+    }
+
+    .blog-container-title{
+        @apply font-bold text-2xl pb-1 pr-4 border-b-2 border-uma-blue w-fit mb-6;
+    }
+
+    .screening-form-input{
+        @apply 
+            w-full
+            outline-none 
+            bg-[#EDF2F7] 
+            px-2 
+            py-4 
+            rounded-tl-md 
+            rounded-tr-md
+            border-b-2
+            border-transparent
+            focus:border-uma-blue
+            text-sm;
+    }
+
+    .mental-health-plan{
+        @apply 
+            border 
+            hover:border-amber-500 
+            rounded-md 
+            px-1 
+            py-3 
+            text-center;
+    }
+
+    .alert-popup-modal{
+        @apply 
+            fixed 
+            top-0 
+            left-0 
+            h-[100vh] 
+            w-full 
+            bg-black/70
+            backdrop-blur-sm
+            flex 
+            justify-center 
+            items-center 
+            z-50 
+            transition-[opacity] duration-300
+            opacity-0 
+            pointer-events-none;
+    }
+
+    .alert-popup-modal.active{
+        @apply opacity-100 pointer-events-auto;
+    }
+
+    .alert-popup{
+        @apply 
+            grid 
+            sm:grid-cols-2 
+            auto-rows-fr 
+            justify-items-center
+            items-center
+            to-[rgba(208,231,255,.5)] 
+            text-black
+            h-[18rem]
+            sm:h-60 
+            mx-auto
+            w-[90%]
+            sm:w-[80%]
+            md:w-[70%]
+            lg:w-[40%];
+    }
+
+    .custom-loader{
+        @apply 
+            relative 
+            w-28 
+            h-28 
+            rounded-full 
+            shadow-xl
+            bg-gradient-to-r
+            from-[#2193b0] 
+            to-[#6dd5ed]
+            animate-spin
+            before:content-['']
+            before:block
+            before:bg-white
+            before:w-[95%]
+            before:h-[95%]
+            before:absolute
+            before:top-1/2
+            before:left-1/2
+            before:-translate-x-1/2
+            before:-translate-y-1/2
+            before:rounded-full;
+    }
+}
+
+:root{
+    --header-nav-size: 4rem;
+    --header-banner-size: 4.5rem;
+    --header-size: calc(var(--header-banner-size) + var(--header-nav-size));
+}
+
+@media screen and (min-width: 640px) {
+    :root{
+        --header-banner-size: 3.5rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    :root{
+        --header-banner-size: 2.5rem;
+    }
+}
+
+body > #root{
+    display: grid;
+    grid-template-rows: auto min-content;
+    min-height: calc(100vh - var(--header-size));
+    margin-top: var(--header-size);
+}
+
+html{
+    font-size: 0.8125rem;
+    scroll-behavior: smooth;
+}
+
+@media screen and (min-width: 20rem){
+    html{
+        font-size: calc(0.8125rem + 0.1875 * ((100vw - 20rem) / 61.25));
+    }
+}
+
+@media screen and (min-width: 81.25rem){
+    html{
+        font-size: 1rem;
+    }
+}
+
+li:hover .submenu{
+    @apply opacity-100 pointer-events-auto;
+}
+
+.header-banner{
+    @apply 
+        page-container 
+        h-full 
+        md:text-sm flex 
+        items-center 
+        justify-center 
+        gap-2 
+        flex-wrap 
+        text-center;
+}
+
+li:hover .underline-link::after{
+    @apply w-full opacity-100;
+}
+
+.custom-modal.active{
+    @apply opacity-100 pointer-events-auto transition-opacity;
+}
+
+.custom-modal.nav.active nav{
+    @apply translate-x-0 transition-transform duration-300;
+}
+
+.main-banner{
+    @apply 
+        md:h-[calc(100vh-var(--header-size))] 
+        pt-10
+        pb-40
+        md:py-0
+        bg-no-repeat 
+        bg-cover;
+}
+
+.main-banner-grid{
+    @apply 
+        grid 
+        md:grid-cols-2 
+        gap-5 
+        md:items-center 
+        md:justify-items-center 
+        h-full 
+        lg:w-[90%] 
+        mx-auto;
+}
+
+.info{
+    @apply
+        relative
+        after:content-[attr(data-text)]
+        after:text-white
+        after:uppercase
+        after:text-base
+        after:whitespace-nowrap
+        after:tracking-wider
+        after:bg-green-600
+        after:py-1
+        after:px-2
+        after:rounded-full
+        after:-rotate-12
+        after:absolute
+        after:top-[80%]
+        after:left-full
+        after:-translate-x-1/2
+        after:hidden
+        after:md:block
+}
+
+.info.alt{
+    @apply after:normal-case;
+}
+
+.info-title{
+    @apply 
+        uppercase 
+        md:text-center 
+        font-bold 
+        text-2xl 
+        md:text-3xl 
+        mb-6 
+        md:mb-16 
+        lg:mb-20;
+}
+
+.info-title.alt{
+    @apply normal-case text-uma-blue-dark md:text-4xl;
+}
+
+.info-list-title{
+    @apply font-bold text-4xl leading-normal mb-6;
+}
+
+.info-list-title.alt{
+    @apply hidden md:block mb-2;
+}
+
+.accordion-button{
+    @apply 
+        text-uma-blue 
+        text-lg 
+        font-semibold 
+        md:py-6 
+        md:px-8
+        py-4
+        px-6 
+        flex 
+        items-center 
+        justify-between
+        gap-2;
+}
+
+.accordion-button > svg{
+    @apply transition-transform duration-300 shrink-0;
+}
+
+.accordion-button[aria-expanded="true"] > svg{
+    transform: rotate(-180deg);
+}
+
+.service-banner{
+    @apply 
+        py-10 
+        sm:py-12 
+        md:py-0 
+        md:h-[calc(100vh-var(--header-size))];
+}
+
+.cardiovascular-btn{
+    @apply 
+        relative
+        before:hidden
+        before:sm:block
+        before:content-['']
+        before:bg-[url('src/assets/img/sin-costo.2c193881.webp')]
+        before:bg-contain
+        before:bg-center
+        before:bg-no-repeat
+        before:w-16
+        before:h-16
+        before:absolute
+        before:left-full
+        before:top-1/2;
+}
+
+.screening-form-submit{
+    @apply 
+        outline-none 
+        text-white 
+        font-bold 
+        text-center 
+        rounded-md 
+        bg-[#9F3BDE] 
+        py-3 
+        cursor-pointer 
+        hover:bg-[#B653F5];
+}
+
+.screening-form-submit.success{
+    @apply outline-[#9F3BDE] outline-offset-2 outline-2;
+}
+
+.screening-form{
+    @apply 
+        py-10 
+        sm:py-12 
+        md:py-6
+        md:min-h-[calc(100vh-var(--header-size))]
+        bg-no-repeat 
+        bg-center 
+        bg-cover;
+}
