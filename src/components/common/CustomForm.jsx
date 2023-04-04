@@ -21,7 +21,7 @@ const CustomForm = ({ type }) => {
     }
     return (
         <section
-            className={`screening-form ${type === 'healthScreening' ? 'bg-form-pattern' : 'bg-[url("src/assets/img/banner-vaccine.965903d0.webp")]'}`}
+            className={`screening-form ${type === 'healthScreening' ? 'bg-form-pattern' : 'bg-[url("/src/assets/img/banner-vaccine.965903d0.webp")]'}`}
         >
             <div className="page-container h-full">
                 <div className="grid md:grid-cols-2 gap-x-10 gap-y-8 md:justify-items-center items-center h-full section-container">

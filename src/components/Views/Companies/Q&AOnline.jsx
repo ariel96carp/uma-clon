@@ -24,25 +24,25 @@ const QuestionsAndAnswers = () => (
                         title="Texto a voz"
                         text="La plataforma transforma a texto los diálogos que tienes con tus
                         pacientes, y recopila palabras clave para conformar la epicrisis."
-                        bgImageClassName="before:bg-[url('src/assets/img/microphone.webp')]"
+                        bgImageClassName="before:bg-[url('/src/assets/img/microphone.webp')]"
                     />
                     <FeatureItem
                         title="Diagnóstico Predictivo"
                         text="Confeccione recetas digitales para sus pacientes, ordenes de estudio,
                         y cualquier archivo que crea necesario."
-                        bgImageClassName="before:bg-[url('src/assets/img/notes.webp')]"
+                        bgImageClassName="before:bg-[url('/src/assets/img/notes.webp')]"
                     />
                     <FeatureItem
                         title="Antecedentes Digitales"
                         text="Acceda a la historia clínica digital de sus pacientes, junto con notas
                         y observaciones de otros profesionales de la salud."
-                        bgImageClassName="before:bg-[url('src/assets/img/doctor.webp')]"
+                        bgImageClassName="before:bg-[url('/src/assets/img/doctor.webp')]"
                     />
                     <FeatureItem
                         title="Recetas Digitales"
                         text="Confeccione recetas digitales para sus pacientes, ordenes de estudio,
                         y cualquier archivo que crea necesario."
-                        bgImageClassName="before:bg-[url('src/assets/img/pill.webp')]"
+                        bgImageClassName="before:bg-[url('/src/assets/img/pill.webp')]"
                     />
                 </ul>
             </div>

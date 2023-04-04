@@ -112,12 +112,12 @@
     }
         
     .list-item-image.check{
-        @apply before:bg-[url('src/assets/img/check.png')];
+        @apply before:bg-[url('/src/assets/img/check.png')];
     }
 
     .list-item-image.plan{
         @apply 
-            before:bg-[url('src/assets/img/featureItem.2437cbf4.webp')] 
+            before:bg-[url('/src/assets/img/featureItem.2437cbf4.webp')] 
             justify-start
             before:w-8
             before:h-8;
