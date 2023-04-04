@@ -11,7 +11,7 @@ const Info = ({
     altVersion = false
 }) => (
     <div
-        className="md:bg-[url('src/assets/img/cardiobg.4e2c5be8.webp')] bg-center bg-no-repeat bg-contain md:h-[40rem]"
+        className="md:bg-[url('/src/assets/img/cardiobg.4e2c5be8.webp')] bg-center bg-no-repeat bg-contain md:h-[40rem]"
     >
         <h3 className={`${!altVersion ? 'info-title' : 'info-title alt'}`}>
             <span className={`${!altVersion ? 'info' : 'info alt'}`} data-text={titleSign}>{title}</span>
