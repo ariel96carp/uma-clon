@@ -39,14 +39,14 @@ npm run build
 [https://dante-uma-clon.netlify.app/](https://dante-uma-clon.netlify.app/)
 
 ## Technologies Used
-[React](https://es.reactjs.org/)..
-[Vite](https://vitejs.dev/)..
-[ESLint](https://eslint.org/)..
+[React](https://es.reactjs.org/)
+[Vite](https://vitejs.dev/)
+[ESLint](https://eslint.org/)
 [TailwindCSS](https://tailwindcss.com/)
 
 ## Libraries Used
-[React Router](https://reactrouter.com/en/main)..
-[Formik](https://formik.org/)..
-[Prop-Types](https://github.com/facebook/prop-types)..
-[Pure React Carousel](https://github.com/facebook/prop-types)..
+[React Router](https://reactrouter.com/en/main)
+[Formik](https://formik.org/)
+[Prop-Types](https://github.com/facebook/prop-types)
+[Pure React Carousel](https://github.com/facebook/prop-types)
 [React Accessible Accordion](https://github.com/springload/react-accessible-accordion)
