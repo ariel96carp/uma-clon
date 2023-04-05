@@ -7,7 +7,7 @@ const BlogsContainer = () => {
         {
             title: 'Conocé qué es el asma y cómo controlarlo',
             category: 'Salud',
-            specialist: 'Hugo F. Moreno - Especialista en Cirugía de Torax y Neumonología - MP 22993',
+            specialist: 'Dante A. Carrasco - Especialista en Cirugía de Torax y Neumonología - MP 22ZS54',
             readingTimeMins: 11,
             imageBgClassName: 'bg-[url("/src/assets/img/medium_hands-with-lungs-shape.jpg")]'
         },
@@ -21,21 +21,21 @@ const BlogsContainer = () => {
         {
             title: '¿Qué es la Viruela del Mono y cuáles son sus síntomas?',
             category: 'Salud',
-            specialist: 'Sofia Lodos - Médica - MN 155560',
+            specialist: 'Sofía Fernández - Médica - MN 15D860',
             readingTimeMins: 6,
             imageBgClassName: 'bg-[url("/src/assets/img/small_6286a52cb1646.jpg")]'
         },
         {
             title: 'Vacunación antigripal y algunos conceptos a saber sobre la gripe',
             category: 'Salud',
-            specialist: 'Lucas Matías Córdoba - Médico',
+            specialist: 'Lucas Santiago Córdoba - Médico',
             readingTimeMins: 9,
             imageBgClassName: 'bg-[url("/src/assets/img/small_woman-with-plaster-on-shoulder-sitting-in-chair-after-vaccination.jpg")]'
         },
         {
             title: 'Las 11 preguntas más frecuentes sobre hipertensión arterial',
             category: 'Cardiología',
-            specialist: 'Gustavo Daquarti - Cardiólogo',
+            specialist: 'Gustavo García - Cardiólogo',
             readingTimeMins: 14,
             imageBgClassName: 'bg-[url("/src/assets/img/small_close-up-blood-pressure-measuring-device.jpg")]'
         },
@@ -49,7 +49,7 @@ const BlogsContainer = () => {
         {
             title: 'Nuestro sistema inmune luego del Covid-19',
             category: 'Nutrición',
-            specialist: 'Lorena Agostini - Nutricionista - MN 4133',
+            specialist: 'Lorena Pettinato - Nutricionista - MN 41F933',
             readingTimeMins: 6,
             imageBgClassName: 'bg-[url("/src/assets/img/small_healthy-balanced-vegetarian-food-top-view.jpg")]'
         }

@@ -71,28 +71,28 @@ const Services = () => {
                             <Slide index={0}>
                                 <ServiceCard
                                     image={psychologistImage}
-                                    name="Lic. Bettina Berruchio"
+                                    name="Lic. Maira Fernández"
                                     service="Psicología"
                                 />
                             </Slide>
                             <Slide index={1}>
                                 <ServiceCard
                                     image={dermatologistImage}
-                                    name="Dra. Jorgelina Ema Gilli"
+                                    name="Dra. Ariel Rubén Fernández"
                                     service="Dermatología"
                                 />
                             </Slide>
                             <Slide index={2}>
                                 <ServiceCard
                                     image={clinicalImage}
-                                    name="Dr. Ariel Esteban Libas"
+                                    name="Dr. Ariel Esteban Cáceres"
                                     service="Clínica Médica"
                                 />
                             </Slide>
                             <Slide index={3}>
                                 <ServiceCard
                                     image={pediatricianImage}
-                                    name="Dr. Sebastián Ismael Homar"
+                                    name="Dr. Dante Quiroga"
                                     service="Pediatría"
                                 />
                             </Slide>
